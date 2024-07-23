@@ -74,12 +74,14 @@ function App() {
             <strong>Balance: </strong>
             {balance}
           </Card.Text>
-          <Button onClick={btnhandler} variant="primary">
-            {address ? "Connected" : "Connect to Wallet"}
-          </Button>
-          <Button onClick={handleSent} variant="primary">
-            Send Transaction
-          </Button>
+          <div>
+            <Button onClick={btnhandler} variant="primary" className="m-2">
+              {address ? "Connected" : "Connect to Wallet"}
+            </Button>
+            <Button onClick={handleSent} variant="primary" className="m-2">
+              Send Transaction
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </div>
